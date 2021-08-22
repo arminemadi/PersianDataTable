@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="jquery.dataTables.min.css">
+    <link rel="stylesheet" href="aura-admin.css">
+    <style>
+        @import url('https://v1.fontapi.ir/css/Nazanin');
+
+
+        body {
+            font-family: "Nazanin";
+        }
+    </style>
+    <title>Document</title>
+</head>
+
+<body>
+    <div style="display: flex;align-items: center;
+    justify-content: center;">
+        <table id="table" class="dataTable" style="width: 500px;">
+            <thead>
+                <tr>
+                    <th>#</th>
+                    <th>نام</th>
+                    <th>نام خانوادگی</th>
+                </tr>
+            </thead>
+            <tbody>
+
+            </tbody>
+        </table>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="jquery.dataTables.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('#table').DataTable({
+                "paging": false
+            });
+        });
+    </script>
+</body>
+
+</html>
